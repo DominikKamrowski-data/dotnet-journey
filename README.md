@@ -18,6 +18,7 @@ Each project focuses on new language features and programming concepts.
 | 002 | [Car Rental](01_CSharp/002_CarRental) | ✅ | Comparison operators, `&&`, `ToLower()`, string comparison |
 | 003 | [BMI Calculator](01_CSharp/003_BMICalculator) | ✅ | `double.Parse()`, arithmetic operations, `else if`, numeric formatting |
 | 004 | [Number Guessing Game](01_CSharp/004_NumberGuessingGame) | ✅ | `Random`, `while` loop, counters, conditional statements |
+| 005 | [Multiplication Table](01_CSharp/005_MultiplicationTable) | ✅ | `for` loop, nested loops, arithmetic operations |
 
 ---
 
@@ -36,6 +37,8 @@ Each project focuses on new language features and programming concepts.
 - Random number generation
 - `while` loops
 - Counters and the increment operator `++`
+- `for` loops
+- Nested loops
 
 ---
 
@@ -48,7 +51,8 @@ dotnet-journey/
     ├── 001_AgeCalculator/
     ├── 002_CarRental/
     ├── 003_BMICalculator/
-    └── 004_NumberGuessingGame/
+    ├── 004_NumberGuessingGame/
+    └── 005_MultiplicationTable/
 ```
 
 ---
