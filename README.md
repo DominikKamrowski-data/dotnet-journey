@@ -17,6 +17,7 @@ Each project focuses on new language features and programming concepts.
 | 001 | [Age Calculator](01_CSharp/001_AgeCalculator) | ✅ | Variables, Console I/O, `int.Parse()`, `if / else`, string interpolation |
 | 002 | [Car Rental](01_CSharp/002_CarRental) | ✅ | Comparison operators, `&&`, `ToLower()`, string comparison |
 | 003 | [BMI Calculator](01_CSharp/003_BMICalculator) | ✅ | `double.Parse()`, arithmetic operations, `else if`, numeric formatting |
+| 004 | [Number Guessing Game](01_CSharp/004_NumberGuessingGame) | ✅ | `Random`, `while` loop, counters, conditional statements |
 
 ---
 
@@ -32,6 +33,9 @@ Each project focuses on new language features and programming concepts.
 - String comparison with `ToLower()`
 - String interpolation
 - Numeric formatting with `F2`
+- Random number generation
+- `while` loops
+- Counters and the increment operator `++`
 
 ---
 
@@ -43,7 +47,8 @@ dotnet-journey/
 └── 01_CSharp/
     ├── 001_AgeCalculator/
     ├── 002_CarRental/
-    └── 003_BMICalculator/
+    ├── 003_BMICalculator/
+    └── 004_NumberGuessingGame/
 ```
 
 ---

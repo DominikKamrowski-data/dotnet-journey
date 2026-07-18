@@ -1,4 +1,4 @@
-\# BMI Calculator
+# BMI Calculator
 
 
 
@@ -6,57 +6,57 @@ A simple C# console application that calculates the user's Body Mass Index and a
 
 
 
-\## Features
+## Features
 
 
 
-\- Collects the user's name, weight and height
+- Collects the user's name, weight and height
 
-\- Converts height from centimeters to meters
+- Converts height from centimeters to meters
 
-\- Calculates BMI
+- Calculates BMI
 
-\- Displays the result with two decimal places
+- Displays the result with two decimal places
 
-\- Assigns a BMI category
-
-
-
-\## BMI Categories
+- Assigns a BMI category
 
 
 
-\- Underweight: below 18.5
-
-\- Normal weight: from 18.5 to 24.99
-
-\- Overweight: from 25 to 29.99
-
-\- Obesity: 30 or higher
+## BMI Categories
 
 
 
-\## Concepts Used
+- Underweight: below 18.5
+
+- Normal weight: from 18.5 to 24.99
+
+- Overweight: from 25 to 29.99
+
+- Obesity: 30 or higher
 
 
 
-\- Variables
-
-\- User input
-
-\- Type conversion
-
-\- Mathematical operations
-
-\- Conditional statements
-
-\- String interpolation
-
-\- Numeric formatting
+## Concepts Used
 
 
 
-\## How to Run
+- Variables
+
+- User input
+
+- Type conversion
+
+- Mathematical operations
+
+- Conditional statements
+
+- String interpolation
+
+- Numeric formatting
+
+
+
+## How to Run
 
 
 
