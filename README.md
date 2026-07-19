@@ -19,6 +19,7 @@ Each project focuses on new language features and programming concepts.
 | 003 | [BMI Calculator](01_CSharp/003_BMICalculator) | ✅ | `double.Parse()`, arithmetic operations, `else if`, numeric formatting |
 | 004 | [Number Guessing Game](01_CSharp/004_NumberGuessingGame) | ✅ | `Random`, `while` loop, counters, conditional statements |
 | 005 | [Multiplication Table](01_CSharp/005_MultiplicationTable) | ✅ | `for` loop, nested loops, arithmetic operations |
+| 006 | [Grade Analyzer](01_CSharp/006_GradeAnalyzer) | ✅ | Arrays, `for`, `foreach`, average, minimum and maximum |
 
 ---
 
@@ -39,6 +40,10 @@ Each project focuses on new language features and programming concepts.
 - Counters and the increment operator `++`
 - `for` loops
 - Nested loops
+- Arrays and zero-based indexing
+- `foreach` loops
+- Array `Length` property
+- Type casting
 
 ---
 
@@ -52,7 +57,8 @@ dotnet-journey/
     ├── 002_CarRental/
     ├── 003_BMICalculator/
     ├── 004_NumberGuessingGame/
-    └── 005_MultiplicationTable/
+    ├── 005_MultiplicationTable/
+    └── 006_GradeAnalyzer/
 ```
 
 ---
