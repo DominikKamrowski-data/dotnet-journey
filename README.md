@@ -20,6 +20,7 @@ Each project focuses on new language features and programming concepts.
 | 004 | [Number Guessing Game](01_CSharp/004_NumberGuessingGame) | ✅ | `Random`, `while` loop, counters, conditional statements |
 | 005 | [Multiplication Table](01_CSharp/005_MultiplicationTable) | ✅ | `for` loop, nested loops, arithmetic operations |
 | 006 | [Grade Analyzer](01_CSharp/006_GradeAnalyzer) | ✅ | Arrays, `for`, `foreach`, average, minimum and maximum |
+| 007 | [Simple Calculator](01_CSharp/007_SimpleCalculator) | ✅ | Methods, parameters, `return`, `switch`, boolean flags |
 
 ---
 
@@ -44,6 +45,10 @@ Each project focuses on new language features and programming concepts.
 - `foreach` loops
 - Array `Length` property
 - Type casting
+- Methods with parameters and return values
+- `switch` statements
+- Boolean flags
+- Basic error handling
 
 ---
 
@@ -58,7 +63,8 @@ dotnet-journey/
     ├── 003_BMICalculator/
     ├── 004_NumberGuessingGame/
     ├── 005_MultiplicationTable/
-    └── 006_GradeAnalyzer/
+    ├── 006_GradeAnalyzer/
+    └── 007_SimpleCalculator/
 ```
 
 ---
