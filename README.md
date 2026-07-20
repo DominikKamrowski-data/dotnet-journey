@@ -21,6 +21,7 @@ Each project focuses on new language features and programming concepts.
 | 005 | [Multiplication Table](01_CSharp/005_MultiplicationTable) | ✅ | `for` loop, nested loops, arithmetic operations |
 | 006 | [Grade Analyzer](01_CSharp/006_GradeAnalyzer) | ✅ | Arrays, `for`, `foreach`, average, minimum and maximum |
 | 007 | [Simple Calculator](01_CSharp/007_SimpleCalculator) | ✅ | Methods, parameters, `return`, `switch`, boolean flags |
+| 008 | [Task Manager](01_CSharp/008_TaskManager) | ✅ | `List<string>`, CRUD, methods, `TryParse()`, input validation |
 
 ---
 
@@ -49,6 +50,13 @@ Each project focuses on new language features and programming concepts.
 - `switch` statements
 - Boolean flags
 - Basic error handling
+- Dynamic collections with `List<T>`
+- CRUD operations
+- List methods: `Add()`, `RemoveAt()` and `Count`
+- Input validation with `int.TryParse()`
+- Text validation with `string.IsNullOrWhiteSpace()`
+- Methods with collection parameters
+- Early returns
 
 ---
 
@@ -64,7 +72,8 @@ dotnet-journey/
     ├── 004_NumberGuessingGame/
     ├── 005_MultiplicationTable/
     ├── 006_GradeAnalyzer/
-    └── 007_SimpleCalculator/
+    ├── 007_SimpleCalculator/
+    └── 008_TaskManager/
 ```
 
 ---
