@@ -23,6 +23,7 @@ Each project focuses on new language features and programming concepts.
 | 007 | [Simple Calculator](01_CSharp/007_SimpleCalculator) | ✅ | Methods, parameters, `return`, `switch`, boolean flags |
 | 008 | [Task Manager](01_CSharp/008_TaskManager) | ✅ | `List<string>`, CRUD, methods, `TryParse()`, input validation |
 | 009 | [Contact Manager](01_CSharp/009_ContactManager) | ✅ | Classes, objects, properties, constructors, `List<Contact>`, CRUD |
+| 010 | [Bank Account](01_CSharp/010_BankAccount) | ✅ | Encapsulation, `decimal`, private setters, class methods, validation |
 
 ---
 
@@ -63,6 +64,12 @@ Each project focuses on new language features and programming concepts.
 - Creating objects with `new`
 - Collections of custom objects
 - Accessing and updating object properties
+- Encapsulation and access control
+- Get-only properties and private setters
+- Financial calculations with `decimal`
+- Class methods returning `bool`
+- Passing objects as method parameters
+- Testing boundary cases
 
 ---
 
@@ -80,7 +87,8 @@ dotnet-journey/
     ├── 006_GradeAnalyzer/
     ├── 007_SimpleCalculator/
     ├── 008_TaskManager/
-    └── 009_ContactManager/
+    ├── 009_ContactManager/
+    └── 010_BankAccount/
 ```
 
 ---
