@@ -22,6 +22,7 @@ Each project focuses on new language features and programming concepts.
 | 006 | [Grade Analyzer](01_CSharp/006_GradeAnalyzer) | ✅ | Arrays, `for`, `foreach`, average, minimum and maximum |
 | 007 | [Simple Calculator](01_CSharp/007_SimpleCalculator) | ✅ | Methods, parameters, `return`, `switch`, boolean flags |
 | 008 | [Task Manager](01_CSharp/008_TaskManager) | ✅ | `List<string>`, CRUD, methods, `TryParse()`, input validation |
+| 009 | [Contact Manager](01_CSharp/009_ContactManager) | ✅ | Classes, objects, properties, constructors, `List<Contact>`, CRUD |
 
 ---
 
@@ -57,6 +58,11 @@ Each project focuses on new language features and programming concepts.
 - Text validation with `string.IsNullOrWhiteSpace()`
 - Methods with collection parameters
 - Early returns
+- Classes and objects
+- Properties and constructors
+- Creating objects with `new`
+- Collections of custom objects
+- Accessing and updating object properties
 
 ---
 
@@ -73,7 +79,8 @@ dotnet-journey/
     ├── 005_MultiplicationTable/
     ├── 006_GradeAnalyzer/
     ├── 007_SimpleCalculator/
-    └── 008_TaskManager/
+    ├── 008_TaskManager/
+    └── 009_ContactManager/
 ```
 
 ---
