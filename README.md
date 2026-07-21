@@ -24,6 +24,7 @@ Each project focuses on new language features and programming concepts.
 | 008 | [Task Manager](01_CSharp/008_TaskManager) | ✅ | `List<string>`, CRUD, methods, `TryParse()`, input validation |
 | 009 | [Contact Manager](01_CSharp/009_ContactManager) | ✅ | Classes, objects, properties, constructors, `List<Contact>`, CRUD |
 | 010 | [Bank Account](01_CSharp/010_BankAccount) | ✅ | Encapsulation, `decimal`, private setters, class methods, validation |
+| 011 | [Product Inventory](01_CSharp/011_ProductInventory) | ✅ | Encapsulation, `List<Product>`, inventory operations, aggregation, input validation |
 
 ---
 
@@ -88,7 +89,8 @@ dotnet-journey/
     ├── 007_SimpleCalculator/
     ├── 008_TaskManager/
     ├── 009_ContactManager/
-    └── 010_BankAccount/
+    ├── 010_BankAccount/
+    └── 011_ProductInventory/
 ```
 
 ---
