@@ -1,10 +1,10 @@
 ﻿
 
-Console.WriteLine("Whats your name?");
-string owner = Console.ReadLine();
+Console.WriteLine("Enter the account owner's name:");
+string? owner = Console.ReadLine();
 if (string.IsNullOrWhiteSpace(owner))
 {
-    Console.WriteLine("Contact name cannot be empty.");
+    Console.WriteLine("Account owner name cannot be empty.");
     return;
 }
 BankAccount account = new BankAccount(owner);
@@ -13,12 +13,12 @@ bool isRunning = true;
 while (isRunning)
 {
     Console.WriteLine("1. Deposit money");
-    Console.WriteLine("2. Withrdaw money");
+    Console.WriteLine("2. Withdraw money");
     Console.WriteLine("3. Show account information");
     Console.WriteLine("4. Exit");
     Console.WriteLine();
     Console.WriteLine("Select option:");
-    string option = Console.ReadLine();
+    string? option = Console.ReadLine();
 
     switch (option)
     {
@@ -56,7 +56,7 @@ Console.WriteLine("Goodbye!");
 void DepositMoney(BankAccount account)
 {
     Console.WriteLine("Enter the amount to deposit:");
-    string input = Console.ReadLine();
+    string? input = Console.ReadLine();
 
     if (!decimal.TryParse(input, out decimal amount))
     {
@@ -78,7 +78,7 @@ void DepositMoney(BankAccount account)
 void WithdrawMoney(BankAccount account)
 {
     Console.WriteLine("Enter the amount to withdraw:");
-    string input = Console.ReadLine();
+    string? input = Console.ReadLine();
     if (!decimal.TryParse(input, out decimal amount))
     {
         Console.WriteLine("Invalid amount.");
