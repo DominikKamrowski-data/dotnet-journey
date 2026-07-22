@@ -121,33 +121,12 @@ void ShowProducts(List<Product> products)
 
 void RestockProduct(List<Product> products)
 {
-    if (products.Count == 0)
+    Product? productToRestock = SelectProduct(products);
+
+    if (productToRestock == null)
     {
-        Console.WriteLine("Your product list is empty.");
         return;
     }
-
-    ShowProducts(products);
-    Console.WriteLine();
-
-    Console.WriteLine("Enter the number of the product to restock:");
-    string? productInput = Console.ReadLine();
-
-    if (!int.TryParse(productInput, out int productNumber))
-    {
-        Console.WriteLine("Invalid product number.");
-        return;
-    }
-
-    int index = productNumber - 1;
-
-    if (index < 0 || index >= products.Count)
-    {
-        Console.WriteLine("Product number does not exist.");
-        return;
-    }
-
-    Product productToRestock = products[index];
 
     Console.WriteLine("Enter the quantity to add:");
     string? amountInput = Console.ReadLine();
@@ -171,33 +150,12 @@ void RestockProduct(List<Product> products)
 }
 void SellProduct(List<Product> products)
 {
-    if (products.Count == 0)
+    Product? productToSell = SelectProduct(products);
+
+    if (productToSell == null)
     {
-        Console.WriteLine("Your product list is empty.");
         return;
     }
-
-    ShowProducts(products);
-    Console.WriteLine();
-
-    Console.WriteLine("Enter the number of the product to sell:");
-    string? productInput = Console.ReadLine();
-
-    if (!int.TryParse(productInput, out int productNumber))
-    {
-        Console.WriteLine("Invalid product number.");
-        return;
-    }
-
-    int index = productNumber - 1;
-
-    if (index < 0 || index >= products.Count)
-    {
-        Console.WriteLine("Product number does not exist.");
-        return;
-    }
-
-    Product productToSell = products[index];
 
     Console.WriteLine("Enter the quantity to sell:");
     string? amountInput = Console.ReadLine();
@@ -245,4 +203,35 @@ void InventoryValue(List<Product> products)
 
     Console.WriteLine($"Total inventory value: {totalValue:F2}");
 }
- 
+
+Product? SelectProduct(List<Product> products)
+{
+    if (products.Count == 0)
+    {
+        Console.WriteLine("Your product list is empty.");
+        return null;
+    }
+
+    ShowProducts(products);
+    Console.WriteLine();
+
+    Console.WriteLine("Enter the number of the product:");
+    string? productInput = Console.ReadLine();
+
+    if (!int.TryParse(productInput, out int productNumber))
+    {
+        Console.WriteLine("Invalid product number.");
+        return null;
+    }
+
+    int index = productNumber - 1;
+
+    if (index < 0 || index >= products.Count)
+    {
+        Console.WriteLine("Product number does not exist.");
+        return null;
+    }
+
+    return products[index];
+}
+
