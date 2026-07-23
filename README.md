@@ -25,6 +25,7 @@ Each project focuses on new language features and programming concepts.
 | 009 | [Contact Manager](01_CSharp/009_ContactManager) | ✅ | Classes, objects, properties, constructors, `List<Contact>`, CRUD |
 | 010 | [Bank Account](01_CSharp/010_BankAccount) | ✅ | Encapsulation, `decimal`, private setters, class methods, validation |
 | 011 | [Product Inventory](01_CSharp/011_ProductInventory) | ✅ | Encapsulation, `List<Product>`, inventory operations, aggregation, input validation |
+| 012 | [Expense Tracker](01_CSharp/012_ExpenseTracker) | ✅ | `enum`, `DateTime`, expense filtering, aggregation, input validation |
 
 ---
 
@@ -90,7 +91,8 @@ dotnet-journey/
     ├── 008_TaskManager/
     ├── 009_ContactManager/
     ├── 010_BankAccount/
-    └── 011_ProductInventory/
+    ├── 011_ProductInventory/
+    └── 012_ExpenseTracker/
 ```
 
 ---
