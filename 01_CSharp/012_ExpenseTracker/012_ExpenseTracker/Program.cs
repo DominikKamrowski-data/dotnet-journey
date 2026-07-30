@@ -179,52 +179,59 @@ void ShowExpensesByCategory(List<Expense> expenses)
 }
 void ShowTotalExpenses(List<Expense> expenses)
 {
-    {
-        if (expenses.Count == 0)
-        {
-            Console.WriteLine("Your expense list is empty.");
-            return;
-        }
-
-        decimal total = 0;
-
-        foreach (Expense expense in expenses)
-        {
-            total += expense.Amount;
-        }
-        Console.WriteLine($"Total expenses: {total:F2}");
-    }
-}
-void RemoveExpense(List<Expense> expenses)
-{
     if (expenses.Count == 0)
     {
         Console.WriteLine("Your expense list is empty.");
         return;
     }
 
-    ShowExpenses(expenses);
+    decimal total = CalculateTotal(expenses);
 
-    Console.WriteLine("Enter the number of the expense to remove:");
-    string? input = Console.ReadLine();
+    Console.WriteLine($"Total expenses: {total:F2}");
+}
+void RemoveExpense(List<Expense> expenses)
+{
+    Expense? expenseToRemove = SelectExpense(expenses);
 
-    if (!int.TryParse(input, out int expenseNumber))
+    if (expenseToRemove == null)
     {
-        Console.WriteLine("Invalid expense number.");
         return;
     }
 
-    int index = expenseNumber - 1;
-
-    if (index < 0 || index >= expenses.Count)
-    {
-        Console.WriteLine("Expense number does not exist.");
-        return;
-    }
-
-    Expense removedExpense = expenses[index];
-    expenses.RemoveAt(index);
+    // usuń z listy obiekt expenseToRemove
 
     Console.WriteLine(
-        $"Expense \"{removedExpense.Description}\" removed successfully.");
+        $"Expense \"{expenseToRemove.Description}\" removed successfully.");
+}
+decimal CalculateTotal(List<Expense> expenses)
+{
+    decimal total = 0;
+
+    foreach (Expense expense in expenses)
+    {
+        total += expense.Amount;
+    }
+
+    return total;
+}
+Expense? SelectExpense(List<Expense> expenses) 
+{ 
+    if (expenses.Count == 0) 
+    { 
+        Console.WriteLine("Your expense list is empty."); 
+        return null; 
+    } 
+    ShowExpenses(expenses); 
+    Console.WriteLine("Enter the expense number:"); 
+    string? input = Console.ReadLine(); 
+    if (!int.TryParse(input, out int expenseNumber)) 
+    { Console.WriteLine("Invalid expense number.");
+        return null; 
+    } int index = expenseNumber - 1;
+    if (index < 0 || index >= expenses.Count) 
+    {
+        Console.WriteLine("Expense number does not exist.");
+        return null;
+    } 
+    return expenses[index]; 
 }
